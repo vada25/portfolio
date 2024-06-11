@@ -3,7 +3,7 @@
     position: relative;
     background: url('../../img/wall-background.jpg') no-repeat 50%/cover;
     padding-top: 205px;
-   /*  filter: brightness(50%); */
+  
     &__title {
         width: 535px;
         margin-top: 10px;
@@ -12,6 +12,7 @@
         position: relative;
         padding-left: 10px;
         z-index: 2;
+        color: black;
         @include before_circle;
     }
     &__buttons {
