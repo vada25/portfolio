@@ -1,7 +1,6 @@
 .skills {
     background-color: rgb(189, 187, 187);
     padding-top: 60px;
-    padding-bottom: 60px;
     &__title {
         z-index: 1;
         text-align: center;
@@ -22,7 +21,8 @@
         padding-top: 20px;
     }
     &__wrapper {
-        padding: 60px 65px 0 65px;
+        padding: 60px 0 0 0;
+        justify-content: center;
         display: grid;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, auto);
