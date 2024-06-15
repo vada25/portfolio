@@ -315,7 +315,7 @@
             </div>
             <div class="skills__ratings">
                 <div class="skills__ratings-item">
-                    <div class="title title_fz14 skills__ratings-title">Sire creation</div>
+                    <div class="title title_fz14 skills__ratings-title">Site creation</div>
                     <div class="skills__ratings-counter">80%</div>
                     <div class="skills__ratings-line">
                         <span></span>
@@ -437,21 +437,27 @@
                         <a href="https://www.linkedin.com/in/yurii-vada?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contacts__link"><img src="icons/social/linkedin.png" alt="linkedin"></a>
                         <a href="https://t.me/vada25" class="contacts__link"><img src="icons/social/telegram.png" alt="telegram"></a>
                     </div>
-                    <div class="title title_fz14 contacts__text">or leave your connections and I'll call you back</div>
+                    <div class="title title_fz14 contacts__text">or send me message and I'll call you back</div>
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input id="name" type="text" name="name">
+                            <input id="name" required type="text" name="name">
                             <label for="name">Your name</label>
                         </div>
                         <div class="contacts__input">
-                            <input id="email" type="email" name="email">
+                            <input id="email" required type="email" name="email">
                             <label for="email">Your e-mail</label>
                         </div>
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
-                        <button class="btn">Send message</button>
+                        <div class="contacts__triggers">
+                            <button class="contacts__btn btn">Send message</button>
+                            <div class="contacts__policy">
+                                <input required type="checkbox">
+                                <span>I agree with the <a href="/policy.html"> Privacy Policy</a></span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
