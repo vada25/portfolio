@@ -41,6 +41,28 @@
         }
 
     }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 35px;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .contacts {
+        &__wrapper {
+            column-gap: 20px;
+            grid-template-columns: 300px 450px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 190px 45px / auto auto;
+        }
+    }
   
 }
     
@@ -100,11 +122,31 @@
                 width: 100%;
             }
         }
-        } 
-       
-       
-    
-   
+    } 
+    .price {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(auto-fit, 350px);
+            justify-content: center;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            column-gap: 20px;
+            grid-template-columns: 250px 250px;
+            justify-content: center;
+        }
+        &__form {
+            grid-template: 45px 45px 100px 45px / 1fr;
+        }
+        &__textarea {
+            grid-column: unset;
+        }
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: 1fr;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -160,7 +202,26 @@
                 }
             }
 
+    }
+    .portfolio {
+        padding-top: 40px;
+    }
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 310px);
         }
+    }
+    .contacts {
+        &__wrapper {
+            column-gap: 20px;
+            grid-template-columns: 250px;
+            
+        }
+        &__photo {
+            display: none;
+        }
+        
+    }
 }
 
 @media (max-width: 576px) {
@@ -213,5 +274,16 @@
         &__ratings {
              grid-template-columns: repeat(auto-fit,300px);
         }   
+    }
+    .price {
+        
+        &__wrapper {
+            
+            grid-template-columns: repeat(auto-fit, 300px);
+            &__item {
+                grid-template: minmax(21px, auto) auto / 200px 95px;
+            }
+        }
+        
     }
 }
