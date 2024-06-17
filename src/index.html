@@ -62,12 +62,12 @@
             </div>
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">About me</a></li>
-                    <li class="menu__link"><a href="#">My experience</a></li>
-                    <li class="menu__link"><a href="#">My skills</a></li>
-                    <li class="menu__link"><a href="#">My projects</a></li>
-                    <li class="menu__link"><a href="#">Price list</a></li>
-                    <li class="menu__link"><a href="#">Contacts</a></li>
+                    <li class="menu__link"><a href="#aboutme">About me</a></li>
+                    <li class="menu__link"><a href="#resume">My experience</a></li>
+                    <li class="menu__link"><a href="#skills">My skills</a></li>
+                    <li class="menu__link"><a href="#portfolio">My projects</a></li>
+                    <li class="menu__link"><a href="#price">Price list</a></li>
+                    <li class="menu__link"><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -80,7 +80,7 @@
         <div class="menu__overlay"></div> 
     </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -90,8 +90,8 @@
             <div class="title__fz16 promo__subtitle">My name is Yurii Varyvoda</div>
             <h1 class="title__fz48 promo__title"> I'm Web-developer <br> from Kherson city</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Portfolio</a>
-                <a href="#" class="promo__link btn btn_transparent">About me</a>
+                <a href="#portfolio" class="promo__link btn">Portfolio</a>
+                <a href="#aboutme" class="promo__link btn btn_transparent">About me</a>
             </div>
 
         </div>
@@ -99,7 +99,7 @@
     
     <section class="aboutme">
         <div class="container">
-            <div class="aboutme__wrapper">
+            <div class="aboutme__wrapper" id="aboutme">
                 <div class="aboutme__photo"><img src="img/My_img.jpg" alt="my_picture" class="aboutme__photo"></div>
                 <div class="aboutme__descr">
                     <h2 class="title title__fz16 aboutme__title">About me</h2>
@@ -135,7 +135,7 @@
     </section>
     
     <section class="resume">
-        <div class="container">
+        <div class="container" id="resume">
             <h2 class="title title_fz16 resume__title">Experience</h2>
             <div class="title title_fz36 resume__subtitle">Education and Experience</div>
             <div class="divider"></div>
@@ -234,7 +234,7 @@
     </section>
 
     <section class='skills'>
-        <div class="container">
+        <div class="container" id="skills">
             <h2 class="title title_fz16 skills__title">Skills</h2>
             <div class="title title_fz36 skills__subtitle">I use the following in my work</div>
             <div class="divider"></div>
@@ -362,7 +362,7 @@
     </section>
 
     <section class="portfolio">
-        <div class="container">
+        <div class="container" id="portfolio">
             <h2 class="title title_fz16 portfolio__title">Portfolio</h2>
             <div class="title title_fz36 portfolio__subtitle">My works</div>
             <div class="divider"></div>
@@ -384,7 +384,7 @@
     </section>
 
     <section class="price">
-        <div class="container">
+        <div class="container" id="price">
             <h2 class="title title_fz16 portfolio__title">Price list</h2>
             <div class="divider"></div>
             <div class="price__wrapper">
@@ -423,7 +423,7 @@
     </section>
 
     <section class="contacts">
-        <div class="container">
+        <div class="container" id="contacts">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
                     <img src="img/photo_my.jpg" alt="photo">
@@ -465,6 +465,10 @@
         </div>
     </section>
 
+    <a href="#up" class="pageup"><img src="icons/up-solid.svg" alt="up"></a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>
