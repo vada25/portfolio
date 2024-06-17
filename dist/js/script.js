@@ -19,7 +19,6 @@ linkClose.forEach(link => {
     link.addEventListener('click', closeMenu);
 });
 
-
 // подсчет строки под проценты
 const counters = document.querySelectorAll('.skills__ratings-counter'),
         lines = document.querySelectorAll('.skills__ratings-line span');
@@ -46,5 +45,4 @@ $(document).ready(function() {
         const _href = $(this).attr("href");
         $('html, body').animate({ scrollTop: $(_href).offset().top }, 'slow');
     });
-
 });

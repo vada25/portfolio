@@ -39,7 +39,6 @@
         &__wrapper {
             grid-template-columns: repeat(4,230px);
         }
-
     }
     .portfolio {
         &__wrapper {
@@ -65,8 +64,6 @@
     }
   
 }
-    
-
 
 @media (max-width: 992px) {
     .container {
@@ -94,8 +91,7 @@
             grid-auto-rows: minmax(115px, auto);
             &-item {
                 grid-template-columns: 40px 320px;
-                column-gap: 20px;
-                
+                column-gap: 20px;  
             }
         }
     }
@@ -201,7 +197,6 @@
                     width: 100%;
                 }
             }
-
     }
     .portfolio {
         padding-top: 40px;
@@ -214,13 +209,11 @@
     .contacts {
         &__wrapper {
             column-gap: 20px;
-            grid-template-columns: 250px;
-            
+            grid-template-columns: 250px; 
         }
         &__photo {
             display: none;
         }
-        
     }
 }
 
@@ -319,7 +312,8 @@
         &__item {
             &-descr {
                 padding: 0;
-            }}
+            }
+        }
     }
     .price {
         &__wrapper {
@@ -331,7 +325,6 @@
                 }
             }
         }
-     
     }
     .contacts {
         padding: 40px 0 40px 0;
