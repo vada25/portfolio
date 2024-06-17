@@ -245,8 +245,15 @@
             width: 250px;
             padding-left: 20px;
         }
+        &__close {
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
     }
     .promo {
+        background: url('../img/wall-background.jpg') no-repeat 30%/cover;
         &__btns {
             margin-top: 30px;
         }
@@ -254,36 +261,86 @@
     .aboutme {
         &__wrapper {
             grid-template: 340px auto auto / 1fr;
+            gap: 0px;
         }
+        &__descr {
+            text-align: center;
+            .divider {
+                margin: 0 auto;
+            }
+        }
+       &__title {
+            &:before {
+                top: 1px;
+                left: unset;
+            }
+       }
+
         &__skills {
             grid-template-columns: 1fr;
+            &-item {
+                justify-content: center;
+                grid-template-columns: 40px 300px;
+            }
+        }
+        &__photo {
+            img {
+            padding-top: 0;
+            }
         }
     }
     .resume {
         &__wrapper {
-            padding: 40px 5px 0 5px;
+            padding: 40px 5px 20px 5px;
+        }
+        &__column {
+            &-title {
+                &:before {
+                    top: 24px;
+                }
+            }
         }
     }
     .skills {
         &__wrapper {
+            padding: 30px 0;
             grid-template-columns: repeat(1, 300px);
             }
         &__items {
                 margin-top: 20px;
+
             }
         &__ratings {
              grid-template-columns: repeat(auto-fit,300px);
-        }   
+        }
+        &__subtitle_2 {
+            padding-top: 0px;
+        }
+        &__item {
+            &-descr {
+                padding: 0;
+            }}
     }
     .price {
-        
         &__wrapper {
-            
             grid-template-columns: repeat(auto-fit, 300px);
             &__item {
                 grid-template: minmax(21px, auto) auto / 200px 95px;
+                &-summ {
+                    align-self: center;
+                }
             }
         }
-        
+     
     }
+    .contacts {
+        padding: 40px 0 40px 0;
+        &__wrapper {
+            grid-template-columns: 320px;
+        }
+       &__policy {
+        margin: 20px auto;
+        padding-bottom: 20px;
+       } 
+    }  
 }
